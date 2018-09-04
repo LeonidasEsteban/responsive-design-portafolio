@@ -371,6 +371,21 @@ figure {
   flex-wrap: inherit;
 }
 
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
 /* desktop first que empieces desde el MQ más grande */
 
 @media screen and (max-width: 1024px) {
@@ -426,7 +441,9 @@ figure {
 
 @media screen and (max-width: 767px) {
   
-
+  .burger-button {
+    display: block;
+  }
   .header {
     display: block;
     height: auto;
