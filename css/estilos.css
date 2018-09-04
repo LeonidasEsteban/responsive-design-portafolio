@@ -140,11 +140,15 @@ h2 {
 
 
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 
 .project-imageContainer {
-  width: 500px;
+  width: 50%;
+}
+
+.project-imageContainer img {
+  max-width: 100%;
 }
 
 .header {
@@ -359,10 +363,47 @@ figure {
   .header .logo {
     text-align: center;
   }
+
+  .project {
+    display: block;
+  }
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+  .project-details {
+    width: auto;
+    /* font-size: 10px; */
+  }
+  .project-course, .project-date, .project-url { 
+    margin: .3em 0;
+  }
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+  .project-url {
+    font-size: 1em;
+
+  }
+  .project-course {
+    font-size: .7em;
+
+  }
+  .project-date {
+    font-size: 1em;
+
+  }
+  .project-description {
+    font-size: .8em;
+
+  }
 }
 
 @media screen and (max-width: 480px) {
-  
+  .project-details {
+    font-size: 12px;
+  }
 }
 
 
