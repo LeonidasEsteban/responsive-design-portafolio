@@ -160,14 +160,24 @@
       </div>
     </footer>
     <script>
-      console.log('Hola mundo! es mi primera linea en JS');
-
+      // console.log('Hola mundo! es mi primera linea en JS');
+      const ipad = window.matchMedia('screen and (max-width: 767px)')
       const menu = document.querySelector('.menu');
-      console.log(menu);
+      // console.log(menu);
       const burgerButton = document.querySelector('#burger-menu');
-      console.log(burgerButton);
+      // console.log(burgerButton);
 
-      burgerButton.addEventListener('click', hideShow)
+
+      ipad.addListener(validation)
+
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
+        }
+      }
+
 
       function hideShow() {
         if (menu.classList.contains('is-active')) {
