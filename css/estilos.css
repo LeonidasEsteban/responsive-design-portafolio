@@ -389,6 +389,9 @@ figure {
 /* desktop first que empieces desde el MQ más grande */
 
 @media screen and (max-width: 1024px) {
+  .portfolio {
+    padding: 0;
+  }
   .container {
     padding: 0 1em;
   }
